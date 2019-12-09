@@ -39,3 +39,13 @@ http://interactionprototyping.github.io/exercises/images/github/git-stages.svg
 - local repository (stored in .git folder)
 	- commits are for "milestones" in the project
 	- git commit (entire index --> local repo)
+		- will have to use vim
+		- "i" to insert, then type title
+		- ":wq" to write and then quit
+		- hit enter
+	- git commit -m "title" (to avoid that shit)
+
+git log (shows all commits)
+
+deleting off of index
+- git restore --staged file (reverts it back to the previous add)
