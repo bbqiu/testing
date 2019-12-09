@@ -1,6 +1,7 @@
 git
 all the data that git uses locally is stored in a folder called .git 
 most elite programmers don't use github (just use git on local computer)
+less terminal command line tool
 
 intialize new git repo - git init
 
@@ -58,6 +59,8 @@ branches
 - to switch branches, use "git checkout branchName"
 - cannot switch if there is any "changes not staged for commit" or "changes to be committed bc then you'll lose that version
 
-merging(#1)
+merging
 - git merge branchName (this is going to make current branch updated to the branchName)
 	- if the current one is ahead of the other one, there may be merge conflicts
+	- merge conflict will display some >>>> <<<< stuff in file, choose one version manually then commit
+		- either add desired version to index OR abort merge (git merge --abort)
