@@ -1,0 +1,41 @@
+git
+all the data that git uses locally is stored in a folder called .git 
+most elite programmers don't use github (just use git on local computer)
+
+intialize new git repo - git init
+
+branches
+- by default on master branch
+- new branches for different issues
+- creates a copy of root node (can be master or other branch)
+- jira (issue tracker)
+	- makes new branches for different issues
+	- hooks let this change ur repo
+
+git status
+
+untracked files - git hasn't encountered before
+- git add file.extension
+- git add folder
+- git add folder/*.txt
+- git add . (for every file/folder)
+changes to be committed - git knows of this file, but it's not committed to local staging area
+
+some files that you don't want to commit to github
+- logs, credentials, useless shit
+
+to tag files that you want to ignore, create a file called .gitignore
+- list paths to files to ignore (can also use regex)
+- *.txt (works even in subfolders)
+
+http://interactionprototyping.github.io/exercises/images/github/git-stages.svg
+
+3 lvls for local computer
+- workspace (just the computer)
+- index (medium area between workspace and local repo where you can store before committing)
+	- git add (workspace --> index)
+	- "changes not staged" = file in index is diff than workspace
+		- git diff tells me what exactly is diff
+- local repository (stored in .git folder)
+	- commits are for "milestones" in the project
+	- git commit (index --> local repo)
