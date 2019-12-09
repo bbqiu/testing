@@ -57,3 +57,7 @@ branches
 - head is a pointer to which branch you're currently on
 - to switch branches, use "git checkout branchName"
 - cannot switch if there is any "changes not staged for commit" or "changes to be committed bc then you'll lose that version
+
+merging(#2)
+- git merge branchName (this is going to make current branch updated to the branchName)
+	- if the current one is ahead of the other one, there may be merge conflicts
