@@ -38,4 +38,4 @@ http://interactionprototyping.github.io/exercises/images/github/git-stages.svg
 		- git diff tells me what exactly is diff
 - local repository (stored in .git folder)
 	- commits are for "milestones" in the project
-	- git commit (index --> local repo)
+	- git commit (entire index --> local repo)
