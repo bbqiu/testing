@@ -73,6 +73,6 @@ merging
 
 git servers (github is one)
 - local repo can be connected to multiple remote repos (git remote add origin https://github.com/bbqiu/testing.git)
-	- origin is the standard name of the remote repo
-- git push remoteName branchName (push master branch onto origin repo)
+	- origin is the name of the server (can be anything, defining URL to be this name)
+- git push remoteName branchName (push master branch onto origin remote)
 - git push pushes all local commits to the server
