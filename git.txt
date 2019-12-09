@@ -45,13 +45,14 @@ http://interactionprototyping.github.io/exercises/images/github/git-stages.svg
 		- hit enter
 	- git commit -m "title" (to avoid that shit)
 
-git log (shows all commits)
+git log (shows all commits to local repo)
 
 deleting off of index
 - git restore --staged file (reverts it back to the previous add)
 - git rm --cached file (deletes it from index)
-- NEVER USE -F
-adfa
-dfa
-df
-as
+- NEVER USE -f
+
+branches
+- git branch branchName
+- head is a pointer to which branch you're currently on
+- to switch branches, use "git checkout branchName"
