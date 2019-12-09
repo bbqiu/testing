@@ -73,6 +73,9 @@ merging
 
 git servers (github is one)
 - local repo can be connected to multiple remote repos (git remote add origin https://github.com/bbqiu/testing.git)
-	- origin is the name of the server (can be anything, defining URL to be this name)
+	- origin is the name of the server (can be anything, basically defining URL to be this name)
 - git push remoteName branchName (push master branch onto origin remote)
 - git push pushes all local commits to the server
+- git pull origin master
+	- first fetch from server with temp branch in local repo
+	- then try to merge with current branch in workspace
