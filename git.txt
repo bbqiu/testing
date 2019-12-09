@@ -68,6 +68,7 @@ merging
 - git merge branchName (this is going to make current branch updated to the branchName)
 	- if the current one is ahead of the other one, there may be merge conflicts
 	- merge conflict will display some >>>> <<<< stuff in file, choose one version manually then commit
+		- merge conflicts happen bc >1 isn't committed or there is similar content and algo cannot determine which to choose
 		- either add desired version to index OR abort merge (git merge --abort)
 - can only merge with upstream branches
 
