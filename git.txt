@@ -49,5 +49,9 @@ git log (shows all commits)
 
 deleting off of index
 - git restore --staged file (reverts it back to the previous add)
-- git rm file --cached (deletes it from index)
+- git rm --cached file (deletes it from index)
 - NEVER USE -F
+adfa
+dfa
+df
+as
