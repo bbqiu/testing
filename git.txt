@@ -31,6 +31,8 @@ git remote add remoteName link {connect local repo to remote repo (remoteName is
 git push remoteName branchName {push all local commits of that branch to the desired remote repo}
 git pull remoteName branchName {fetch branchName from server and store as a temp branch in local repo, then try to merge with current branch in workspace (may be merge conflicts)}
 
+testing
+
 intialize new git repo - git init
 
 branches
