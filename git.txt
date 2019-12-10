@@ -1,4 +1,4 @@
-git
+2git
 all the data that git uses locally is stored in a folder called .git 
 most elite programmers don't use github (just use git on local computer)
 less terminal command line tool
