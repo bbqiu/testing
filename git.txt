@@ -3,6 +3,34 @@ all the data that git uses locally is stored in a folder called .git
 most elite programmers don't use github (just use git on local computer)
 less terminal command line tool
 
+what to type
+
+create .gitignore file with filepaths to files that are never added/committed
+
+git init {new repo wiht a master branch}
+git add filePath/fileName {from workplace to index}
+git add . {add everything from workplace to index}
+git status {tells you what is untracked (not in index), what is not staged for commit (workplace and index are diff), merge conflicts, and what is staged for commit}
+git diff {shows what is different bw workplace and index}
+git log {tells you every commit that has happened the current (head) branch (can show github pushes)}
+git commit {move index to local repo ("i" to insert, then type title, ":wq" to write and then quit)}
+git commit -m "title" {avoid vim}
+git restore --staged fileName {restores last index before the last add}
+git rm --cached fileName {deletes it from index}
+	- NEVER USE -f
+git branch branchName {creates a branch (in addition to the default master branch)}
+git checkout branchName {switches to diff branch}
+	- can only do if all changes are committed
+git branch -d branchName {deletes a branch if all changes are reflected in current branch}
+git branch -D branchName {deletes a branch irrespective of merge status}
+git merge branchName {merge current branch with branchName}
+	- merge conflicts are resolved manually (signaled by <<< >>>)
+	- readd and recommit to resolve merge conflicts
+git merge --abort {abort the merge}
+git remote add remoteName link {connect local repo to remote repo (remoteName is a var name for the URL)}
+git push remoteName branchName {push all local commits of that branch to the desired remote repo}
+git pull remoteName branchName {fetch branchName from server and store as a temp branch in local repo, then try to merge with current branch in workspace (may be merge conflicts)}
+
 intialize new git repo - git init
 
 branches
@@ -22,10 +50,9 @@ untracked files - git hasn't encountered before
 - git add . (for every file/folder)
 changes to be committed - git knows of this file, but it's not committed to local staging area
 
-some files that you don't want to commit to github
-- logs, credentials, useless shit
-
 to tag files that you want to ignore, create a file called .gitignore
+- some files that you don't want to commit to github
+- logs, credentials, useless shit
 - list paths to files to ignore (can also use regex)
 - *.txt (works even in subfolders)
 
@@ -58,7 +85,7 @@ branches
 - "upstream branch" = parent branch
 - head is a pointer to which branch you're currently on
 - to switch branches, use "git checkout branchName"
-- cannot switch if there is any "changes not staged for commit" or "changes to be committed bc then you'll lose that version
+- cannot switch if there is any "changes not staged for commit" or "changes to be committed" bc then you'll lose that version
 - git branch -d branchName
 	- will only delete if everything in branchName is reflected in current branch
 - git branch -D branchName
